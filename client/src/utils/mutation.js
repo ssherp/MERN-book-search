@@ -17,11 +17,19 @@ mutation Login($email: String!, $password: String!) {
 `
 export const SAVE_BOOK=gql` 
 mutation SaveBook($authors: [String], $description: String, $bookId: String, $image: String, $link: String, $title: String) {
-    saveBook(authors: $authors, description: $description, bookId: $bookId, image: $image, link: $link, title: $title) {
-      email
-      username
+  saveBook(authors: $authors, description: $description, bookId: $bookId, image: $image, link: $link, title: $title) {
+    email
+    username
+    savedBooks {
+      authors
+      bookId
+      description
+      image
+      link
+      title
     }
   }
+}
 `
 export const REMOVE_BOOK=gql`
 mutation RemoveBook($bookId: String) {
