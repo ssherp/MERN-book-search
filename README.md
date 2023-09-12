@@ -13,8 +13,9 @@
 * Remove Saved Books: Users can remove books from their saved list.
 * Log Out: Users can log out of their accounts.
 
+ * [visit Heroku live site](https://mern-book-convert-74118dbaeea8.herokuapp.com/)
 ## Usage
-
+![screenshot](./client/src/assets/screencapture-mern-book-convert.png)
 * Sign up for an account or log in if you already have one.
 * Use the search bar to find books by entering keywords.
 * Save interesting books to your account.
